@@ -117,6 +117,7 @@ class StorageInstanceBuilder
                     'protocol' => Config::get(LibraryConstants::YVES_STORAGE_SESSION_REDIS_PROTOCOL),
                     'port' => Config::get(LibraryConstants::YVES_STORAGE_SESSION_REDIS_PORT),
                     'host' => Config::get(LibraryConstants::YVES_STORAGE_SESSION_REDIS_HOST),
+                    'password' => Config::get(LibraryConstants::YVES_STORAGE_SESSION_REDIS_PASSWORD),
                 ];
             case self::SEARCH_ELASTICA_ADAPTER:
                 return [
