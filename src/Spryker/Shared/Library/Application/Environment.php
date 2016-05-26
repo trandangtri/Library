@@ -205,11 +205,13 @@ class Environment
             $errorLevel
         );
 
+        /* Temporary
         set_exception_handler(
             function (\Exception $e) use ($initErrorHandler) {
                 $initErrorHandler()->handleException($e);
             }
         );
+        */
 
         register_shutdown_function(
             function () use ($initErrorHandler) {
